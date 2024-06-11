@@ -1,0 +1,116 @@
+.Main-Quote{
+    background: #000000; /* Background color applied here */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%; /* Ensure the main container takes the full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 20px; /* Add padding for better spacing on small screens */
+}
+
+.Header-Quote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center align text for better readability on small screens */
+    max-width: 600px; /* Limit the width for better readability */
+    padding: 40px;
+}
+.Title-Quote{
+    color: #eeeeef;
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 0; /* Add some margin for better spacing */
+}
+
+.main-image-Quote{
+    max-width: 35%; /* Ensure the image doesn't exceed the container's width */
+    height: auto; /* Maintain aspect ratio */
+   
+}
+.List {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #eeeeef;
+    font-size: 25px;
+     /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .List li {
+    margin-bottom: 5px; /* Add some margin between list items */
+  }
+
+  .Header-Quote-Second{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center align text for better readability on small screens */
+    max-width: 600px; /* Limit the width for better readability */
+    padding: 40px;
+  }
+
+  .Title-Quote-Second{
+    color: #eeeeef;
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 0; /* Add some margin for better spacing */
+  }
+
+  .List-Second{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #eeeeef;
+    font-size: 15px;
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  .List-Second li {
+    margin-bottom: 25px; /* Add some margin between list items */
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .Main-Quote {
+      flex-direction: column;
+      height: 100vh; /* Ensure full height on small screens */
+      padding: 8px; /* Add padding for better spacing */
+    }
+    .Header-Quote, .Header-Quote-Second {
+      width: 100%; /* Ensure the header takes full width on small screens */
+      padding: 0px; /* Add some padding for better spacing */
+    }
+   
+  
+    .main-image-Quote {
+      padding-right: 0; /* Remove right padding on small screens */
+      max-width: 40%; /* Adjust image size for small screens */
+    }
+
+    .List{
+        font-size: 10px;
+    }
+    
+    .List-Second{
+        font-size: 8px;
+    }
+
+    .Title-Quote{
+        font-size: 20px;
+    }
+    .Title-Quote-Second{
+        font-size: 15px;
+    }
+  }
