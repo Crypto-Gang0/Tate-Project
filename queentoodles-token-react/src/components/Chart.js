@@ -1,5 +1,4 @@
 import '../styles/Chart.css'
-import ChartObject from './ChartObject';
 import React, { useState, useEffect } from 'react';
 function ChartComp() {
   return (
